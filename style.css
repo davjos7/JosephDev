@@ -3,6 +3,24 @@
     width: 40px;
     height: 40px;
 }
+body {
+    padding-top: 100px; /* Ajusta este valor según la altura de tu header para evitar que el contenido quede detrás */
+}
+
+header {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* Alineado al borde superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 1000; /* Para asegurarte de que el header esté encima de otros elementos */
+    background-color: rgb(176, 236, 250); /* El color de fondo del header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una pequeña sombra para que el header destaque */
+}
+
+header img{
+    border-radius: 50%; /* Convierte la imagen en un círculo */
+    object-fit: cover; 
+}
 
 .project-name {
     font-size: 24px;
@@ -32,8 +50,14 @@
 }
 .contenedor1 .caja1 h1{
     margin-top: 2rem;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold   ;
+}
+.contenedor1 .caja1 img{
+    width: 250px; /* Ajusta el tamaño según sea necesario */
+    height: 250px; /* Debe ser igual al ancho */
+    border-radius: 50%; /* Convierte la imagen en un círculo */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsión */
 }
 .contenedor1 .text-prin{
     display: flex;
@@ -45,12 +69,73 @@
     margin-bottom: 8rem;
 }
 
+@media (max-width: 767px) {
+    .caja1 h1{
+        font-size: 60px !important;
+    }
+    @media (max-width: 550px){
+        .caja1 h1{
+            font-size: 50px !important;
+        }
+    }
+}
+/* FIN CONTEN 1 */
 
-/* CONTEN3 INCIO */
-.contenedor3 .caja3{
+/* INICIO CONTEN 2 */
+
+.contenedor2 .caja2{
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: row-reverse;
+}
+.contenedor2 .proyec-titulo h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+.contenedor2 .proyec-titulo{
+    margin-bottom: 9rem;
+}
+.contenedor2 .proyec-caja{
+    margin-bottom: 100px;
+}
+.contenedor2 .proyec-caja h5{
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.contenedor2 .proyec-caja p{
+    font-size: 15px;
+    font-family: auto;
+    padding-bottom: 10px;
+}
+.contenedor2 .proyec-caja img{
+    border-radius: 5px;
+    width: 380px;
+    height: 280px;
+    box-shadow: -20px 16px 20px 0px black;
+}
+
+@media (max-width: 991px){
+    .contenedor2 .proyec-titulo{
+        margin-bottom: 5rem;
+    }
+    .contenedor2 .proyec-caja{
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+}
+/* FIN CONTEN 2 */
+
+
+
+/* CONTEN3 INCIO */
+.contenedor3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;  
+    text-align: center; /* Centra el contenido dentro del div */
 }
 
 .contenedor3 .titulo-sec3 h1{
@@ -59,8 +144,42 @@
 }
 .contenedor3 .titulo-sec3{
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 .contenedor3 .img-sec3{
-    margin-bottom: 80px;
+    margin-bottom: 70px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    padding-top: 50px;
+}
+.contenedor3 .img-sec3:hover{
+    transform: scale(1.2);
+
+}
+
+.contenedor3 .img-sec3 img{
+    width: 423px;
+    height: 300px;
+    box-shadow: 0px 11px 9px -3px #b0ecfa;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+@media (max-width: 991px){
+    .contenedor3 .img-sec3 img{
+        width: 430px;
+    }
+    @media(max-width: 600px){
+        .contenedor3 .img-sec3 img{
+            width: 380px;
+        }
+    }
+}
+
+/*CONTEN3 FIN*/
+
+
+footer{
+    background: rgb(176, 236, 250);
 }

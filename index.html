@@ -6,16 +6,19 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3097/3097037.png">
     <title>Joseph Davila</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarMenu" data-bs-offset="100">
 
-    <header class="bg-light py-3">
+    <header class="py-3">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <!-- Columna 1: Logo y nombre -->
                 <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="https://pngimg.com/d/deadpool_PNG44.png" alt="JosephDavila" class="logo-img me-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3097/3097037.png" alt="JosephDavila" class="logo-img me-2">
                     <span class="project-name">JosephDev</span>
                 </a>
     
@@ -31,13 +34,16 @@
                             <a class="nav-link" href="#section1">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section2">Servicios</a>
+                            <a class="nav-link" href="#section2">Habilidades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#section3">Certificados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section4">Cv</a>
+                            <a class="nav-link" href="#section4">Tecnologias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section4">Blog</a>
                         </li>
                     </ul>
     
@@ -57,30 +63,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 caja1">
-                    <img src="https://pngimg.com/d/deadpool_PNG44.png" width="150px" alt="" class="logo-prin">
-                    <h1>JOSEPH DAVILA</h1>
+                    <img src="img/io.jpg" width="150px" alt="" class="logo-prin">
+                    <h1>JOSEPH DAVILA HORNA</h1>
                 </div>
                 <div class="text-prin">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsa tempore saepe eum corporis dignissimos eius aliquid delectus laborum. Repellendus dicta repudiandae ipsum, rerum animi amet similique laborum totam consectetur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minus aperiam ipsam, tempora, aut doloremque fugit eum dolore temporibus fuga ab vero voluptates, tenetur quae debitis. Quos error itaque dolore.</p>
+                    <p>Soy Técnico en Desarrollo de Sistemas de Información, recién egresado y con experiencia en prácticas. Me entusiasma aprender y crecer en el mundo del desarrollo web. He participado en proyectos donde he podido aplicar lo que sé y ayudar a crear soluciones digitales.</p>
+                    <a href="">Descargar Cv</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="section2">
+    <section id="section2" class="contenedor2">
         <div class="container">
-            <div class="row">
-                <div>
-                    <h1>SERVICIOS</h1>
+            <div class="row caja2">
+                <div class="proyec-titulo">
+                    <h1>HABILIDADES</h1>
                 </div>
-                <div class="col-6">
-                    <img src="https://pngimg.com/d/deadpool_PNG44.png" width="200px" alt="">
+                
+                <div class="col-lg-6 proyec-caja">
+                    <h5>CREACION DE SITIOS WEBS</h5>
+                    <p>Dale vida a tu negocio en línea con un sitio web único y atractivo. Hacemos que tu marca se destaque y llegue a más personas, con una experiencia fácil y agradable para tus clientes</p>
                 </div>
-                <div class="col-6">
-                    <a href="#">hola</a>
-                    <h5>soy yo</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloribus eveniet incidunt culpa nisi, nihil esse tempore deserunt dolorum saepe illum architecto cumque pariatur omnis animi dolor iusto nulla soluta?</p>
-                    <a href="">gg</a>
+                <div class="col-lg-6 proyec-caja">
+                    <img src="img/servicios/pcweb.jpg" alt="">
+                </div>
+                <div class="col-lg-6 proyec-caja">
+                    <h5>MANTENIMIENTO Y SOPORTE DE COMPUTADORAS </h5>
+                    <p>Cuida tus computadoras con nuestro servicio de mantenimiento. Me asegurare de que funcionen bien y estén actualizadas. También instalo programas como Office y Windows, y hacemos formateos para que todo esté en orden. Así, podrás enfocarte en lo que más te importa.</p>
+                </div>
+                <div class="col-lg-6 proyec-caja">
+                    <img src="img/servicios/pcmantenimiento.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -92,52 +105,81 @@
                 <div class="titulo-sec3">
                     <h1>CERTIFICADOS</h1>
                 </div>
-                <div class="col-md-4 img-sec3">
-                    <img src="https://pngimg.com/d/deadpool_PNG44.png" width="200px" alt="">
-                </div>
-                <div class="col-md-4 img-sec3">
-                    <img src="https://pngimg.com/d/deadpool_PNG44.png" width="200px" alt="">
-                </div>
-                <div class="col-md-4 img-sec3">
-                    <img src="https://pngimg.com/d/deadpool_PNG44.png" width="200px" alt="">
-                </div>
-                <div class="col-md-4 img-sec3">
-                    <img src="https://pngimg.com/d/deadpool_PNG44.png" width="200px" alt="">
-                </div>
-                <div class="col-md-4 img-sec3">
-                    <img src="https://pngimg.com/d/deadpool_PNG44.png" width="200px" alt="">
-                </div><div class="col-md-4">
-                    <img src="https://pngimg.com/d/deadpool_PNG44.png" width="200px" alt="">
+                <div class="carrusel-certi row">
+                    <div class="col-lg-12 img-sec3">
+                        <img src="img/certificados/certi1.jpg" alt="">
+                    </div>
+                    <div class="col-lg-12 img-sec3">
+                        <img src="img/certificados/certi2.JPG" alt="">
+                    </div>
+                    <div class="col-lg-12 img-sec3">
+                        <img src="img/certificados/certi3.JPG" alt="">
+                    </div>
+                    <div class="col-lg-12  img-sec3">
+                        <img src="img/certificados/certi4.JPG" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="piePagina bg-light">
+<footer class="piePagina py-4">
     <div class="container">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-6">Desarrollado con ♥ desde Lima-Perú </div>
-            <div class="col-6">Setiemnbre 2024</div>
+            <div class="col-6">Setiembre 2024</div>
         </div>
     </div>
 </footer>
 
 
 
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.carrusel-certi').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1400, // Para tablets y dispositivos móviles grandes
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 992, // Para tablets y dispositivos móviles grandes
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480, // Para dispositivos móviles más pequeños
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+ 
+
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </body>
 </html>
